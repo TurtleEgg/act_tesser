@@ -354,12 +354,11 @@ class Hypertools:
     @staticmethod
     def apply_transformation(edges: list[tuple], transformation: dict) -> list:
         """Получение результата преобразования для заданной карты."""
-        return sorted(
-            [
+        return [
                 tuple(sorted([transformation[V1], transformation[V2]]))
                 for V1, V2 in edges
             ]
-        )
+
 
     def unravel(self, edges: list[tuple]) -> list:
         """Распутывание карты (минимизация числа пересечений
