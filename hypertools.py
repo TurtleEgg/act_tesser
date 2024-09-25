@@ -362,7 +362,7 @@ class Hypertools:
 
     def unravel(self, edges: list[tuple]) -> list:
         """Распутывание карты (минимизация числа пересечений
-        на плоской проекции)."""
+        на плоской проекции).""" 
         min_count = self._count_intersections(edges)
         unraveling = self.all_transformations[0]
         for transformation in self.all_transformations:
